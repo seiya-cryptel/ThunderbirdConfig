@@ -1,11 +1,20 @@
-<!-- 
-  さくらインターネットのThunderbird用config-v1.1.xml 
-  DOMAIN: foo.jp
-  DISPLAY_NAME: fooメール設定
-  DISPLAY_SHORT_NAME: foo
-  HOST_NAME: foo.sakura.ne.jp # 初期ドメイン名
--->
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Thunderbird 自動設定テンプレート (config-v1.1.xml)
+
+  公開用テンプレートです。実運用のアカウント名・パスワードなど、
+  機密情報はこのファイルに含めないでください。
+
+  置換プレースホルダー:
+    {%DOMAIN%}             : 対象ドメイン (例: foo.jp)
+    {%DISPLAY_NAME%}       : 表示名 (例: fooメール設定)
+    {%DISPLAY_SHORT_NAME%} : 短縮表示名 (例: foo)
+    {%HOST_NAME%}          : メールサーバー名 (例: foo.sakura.ne.jp)
+
+  注意:
+    - {%...%} は配布前にテンプレートエンジン等で置換してください。
+    - %EMAILADDRESS% は Thunderbird 側で利用される変数です。
+-->
 <clientConfig version="1.1">
   <emailProvider id="{%DOMAIN%}">
     <domain>{%DOMAIN%}</domain>
